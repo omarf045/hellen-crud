@@ -9,6 +9,8 @@ app.use(express(json));
 
 app.use("/", require("./router"));
 
-app.listen(process.env.PORT || PORT, () => {
+server = app.listen(process.env.PORT || PORT, () => {
   console.log("SERVER escuchando en PORT");
-}).keepAliveTimeout = 61 * 1000;
+});
+
+server.keepAliveTimeout = 61 * 1000;
