@@ -6,7 +6,6 @@ DB_HOST = "containers-us-west-88.railway.app";
 DB_NAME = "railway";
 DB_USER = "root";
 DB_PASSWORD = "6mnzMlgR7I1d6SfLKAyd";
-DB_PORT = 3000;
 
 const conexion = mysql.createConnection({
   host: DB_HOST,
